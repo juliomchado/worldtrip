@@ -1,19 +1,36 @@
-import { Image } from "@chakra-ui/image";
-import { Box, Flex } from "@chakra-ui/layout";
+import { Center, Divider, Flex, Text } from "@chakra-ui/react";
+import { Banner } from "../components/Banner";
+import { Header } from "../components/Header";
+import { TravelTypesContainer } from "../components/TravelTypesContainer";
+import { TravelType } from "../components/TravelTypesContainer/TravelType";
 
 export default function Home() {
   return (
-    <Flex h="100vh" direction="column">
-      <Flex as="header" justify="center" align="center" my="4">
-        <Box>
-          <Image src="./images/logo.png" alt="worldtrip logo" />
-        </Box>
+    <Flex h="100vh" direction="column" >
+      <Header />
+      <Banner />
+
+      <Flex as="main" h="100vh" w={1160} direction="column" mx="auto" mt="36">
+        <TravelTypesContainer>
+          <TravelType src="./images/travelTypes/cocktail.png" travelName="vida noturna" />
+          <TravelType src="./images/travelTypes/surf.png" travelName="praia" />
+          <TravelType src="./images/travelTypes/building.png" travelName="moderno" />
+          <TravelType src="./images/travelTypes/museum.png" travelName="clássico" />
+          <TravelType src="./images/travelTypes/earth.png" travelName="e mais..." />
+        </TravelTypesContainer>
+
+        <Center mt="20">
+          <Divider orientation="horizontal" w="24" bg="gray.800" color="gray.800" h="1" />
+        </Center>
+
+        <Center>
+          <Text fontWeight="mediums" fontSize="4xl" textAlign="center" mt="14" mb="14">
+            Vamos nessa? <br/>
+            Então escolha seu continente
+        </Text>
+        </Center>
       </Flex>
-      <Flex as="header" justify="center" align="center" mb="20">
-        <Box>
-          <Image src="./images/banner.png" alt="worldtrip logo" maxH={368.21}/>
-        </Box>
-      </Flex>
+
     </Flex >
-  )
-}
+  );
+};
