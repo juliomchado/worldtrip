@@ -6,7 +6,7 @@ export function Banner() {
     return (
         <Flex justify="center" align="center" >
             <Box>
-                <Image src="./images/banner.png" alt="worldtrip logo" maxH={368.21} />
+                <Image src="./images/banner.png" alt="worldtrip logo" minH={368.21} />
             </Box>
         </Flex>
     );
