@@ -7,7 +7,7 @@ export function Header() {
             <ChakraLink>
                 <Flex as="header" justify="center" align="center" my="4">
                     <Box>
-                        <Image src="./images/logo.png" alt="worldtrip logo" />
+                        <Image src="./images/logo.svg" alt="worldtrip logo" />
                     </Box>
                 </Flex>
             </ChakraLink>
