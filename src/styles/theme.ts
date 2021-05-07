@@ -14,13 +14,16 @@ export const theme = extendTheme({
     },
     fonts: {
         heading: 'Poppins',
-        body: 'Poppins'
+        body: 'Poppins',
+        mono: 'Barlow'
     },
     styles: {
         global: {
             body: {
                 bg: 'gray.50',
-                color: 'gray.700'
+                color: 'gray.700',
+                mx: 'auto',
+                maxW: '1280',
             }
         }
     }
