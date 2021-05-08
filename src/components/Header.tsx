@@ -7,10 +7,9 @@ interface HeaderProps {
 
 export function Header({ backIcon = false }: HeaderProps) {
     return (
-        <Flex as="header" align="center" maxW={1280} my="auto" maxHeight="24">
-
+        <Flex justify="center" align="center">
             {backIcon && (
-                <Flex pl="20" >
+                <Flex pl={["12", "16", "20"]}>
                     <Link href="/" passHref>
                         <ChakraLink>
                             <Box display="flex" alignItems="center" justifyContent="center">
@@ -20,8 +19,7 @@ export function Header({ backIcon = false }: HeaderProps) {
                     </Link>
                 </Flex>
             )}
-            <Flex w="100%" justify="center" align="center" my="4" px="20" maxW={1280}>
-
+            <Flex w="100%" justify="center" align="center" my="4" mr="5%" px="20" maxW={1280}>
                 <Link href="/" passHref>
                     <ChakraLink>
                         <Box>

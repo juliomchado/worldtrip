@@ -8,11 +8,11 @@ import { TravelType } from "../components/TravelTypes/TravelType";
 
 export default function Home() {
   return (
-    <Flex h="100vh" direction="column" mx="auto">
+    <Flex w="100vw" h="100vh" direction="column">
       <Header />
       <HomeBanner />
-    
-      <Flex as="main" h="100vh" w={1280} direction="column" mx="auto" mt="20" px="35">
+
+      <Flex as="main" w="100%" h="100vh" maxW={1280} direction="column" mx="auto" mt="20" px="35">
         <TravelTypesContainer>
           <TravelType src="./images/travelTypes/cocktail.svg" travelName="vida noturna" />
           <TravelType src="./images/travelTypes/surf.svg" travelName="praia" />
@@ -26,7 +26,7 @@ export default function Home() {
         </Center>
 
         <Center>
-          <Text fontWeight="medium" fontSize="3xl" textAlign="center" mt="14" mb="14">
+          <Text fontWeight="medium" fontSize={["xl", "2xl", "3xl"]} textAlign="center" mt="14" mb="14">
             Vamos nessa? <br />
             Então escolha seu continente
         </Text>

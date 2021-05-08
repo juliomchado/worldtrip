@@ -8,7 +8,7 @@ interface InfoContainerProps {
 export function InfoContainer({ children }: InfoContainerProps) {
 
     return (
-        <Flex flex="1" ml="32" align="center" justify="space-between">
+        <Flex flex="1" align="center" justify={["space-between", "space-around", "space-between"]}>
             {children}
         </Flex>
     )

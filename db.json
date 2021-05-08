@@ -1,0 +1,39 @@
+{
+    "europe": [
+        {
+            "id": 1,
+            "countryImage": "./images/europeImages/cityPhoto/london.png",
+            "country": "London",
+            "city": "Reino Unido",
+            "countryFlag": "./images/europeImages/cityFlag/englishFlag.png"
+        },
+        {
+            "id": 2,
+            "countryImage": "./images/europeImages/cityPhoto/london.png",
+            "country": "London",
+            "city": "Reino Unido",
+            "countryFlag": "./images/europeImages/cityFlag/englishFlag.png"
+        },
+        {
+            "id": 3,
+            "countryImage": "./images/europeImages/cityPhoto/london.png",
+            "country": "London",
+            "city": "Reino Unido",
+            "countryFlag": "./images/europeImages/cityFlag/englishFlag.png"
+        },
+        {
+            "id": 5,
+            "countryImage": "./images/europeImages/cityPhoto/london.png",
+            "country": "London",
+            "city": "Reino Unido",
+            "countryFlag": "./images/europeImages/cityFlag/englishFlag.png"
+        },
+        {
+            "id": 6,
+            "countryImage": "./images/europeImages/cityPhoto/london.png",
+            "country": "London",
+            "city": "Reino Unido",
+            "countryFlag": "./images/europeImages/cityFlag/englishFlag.png"
+        }
+    ]
+}

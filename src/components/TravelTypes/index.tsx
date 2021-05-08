@@ -8,7 +8,7 @@ interface TravelTypeProps {
 export function TravelTypesContainer({ children }: TravelTypeProps) {
 
     return (
-        <Flex as="section" maxW={1280} h="36" align="center" justify="space-between" px="34">
+        <Flex as="section" w="100%" maxW={1280} h="36" align="center" justify="space-between" >
             {children}
         </Flex>
     );
