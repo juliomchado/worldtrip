@@ -1,9 +1,12 @@
-import { Center, Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Center, Divider, Flex, Link, Text, Link as ChakraLink} from "@chakra-ui/react";
+import AwesomeSlider from 'react-awesome-slider';
 
 import { HomeBanner } from "../components/HomeBanner";
 import { Header } from "../components/Header";
 import { TravelTypesContainer } from "../components/TravelTypes";
 import { TravelType } from "../components/TravelTypes/TravelType";
+
+import 'react-awesome-slider/dist/styles.css';
 
 
 export default function Home() {
@@ -29,8 +32,12 @@ export default function Home() {
           <Text fontWeight="medium" fontSize={["xl", "2xl", "3xl"]} textAlign="center" mt="14" mb="14">
             Vamos nessa? <br />
             Então escolha seu continente
-        </Text>
+          </Text>
         </Center>
+        <AwesomeSlider style={{ heigth: '450px' }}>
+              <div data-src="./images/continentSlider/europe.png">
+              </div>
+        </AwesomeSlider>
       </Flex>
 
     </Flex>
